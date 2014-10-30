@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>CS5010 Fall 2014: Project 1 - Extract Programming Interview Questions from CareerCup</title>
+<style type="text/css">
+body {
+   color: #333333; 
+   margin: 0 auto;
+   font-size: 1em;
+   font-family: Verdana, "Verdana CE",  Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+   text-align: center;
+}
+h1 {
+   font-size: 1.6em;
+   color: #333;
+   font-weight : normal;
+   padding:10px;
+   margin: 20px 10px 10px 0px;
+   text-align:center;
+}
+h2 {
+   font-size: 1.3em;
+   color: black;  
+   font-weight : normal; 
+   padding:5px 0px 2px 0px;
+   margin:0px 0px 5px 0px;
+   border-bottom:1px solid #D1d1d1; 
+   text-align:left;
+}
+.baseFont { 
+   font-size: 1.1em;
+   font-family: helvetica, arial, sans-serif; 
+}
+.inframe { 
+   border: 2px solid;
+   position:relative;
+   margin: 0 auto;
+   top: 5px;
+   color: black;
+   border-color: #00BFFF;
+   width: 50em;
+   display: block; 
+   padding: 1.5em;
+   text-align: left;
+   background-color: #FFF; 
+}
+pre {
+   background-color:#FFF8E4;
+   padding:10px;
+   font-size: 1.3em;
+   _font-size: 1.2em;
+}
+pre,samp,code,tt {
+   font-family: "Courier New", monospace;
+   font-size:1.1em;
+   color:black;
+}
+.examplecode  {
+   background-color:#FFF8E4;
+   overflow:auto;
+   width:95%;
+}
+</style>
+</head>
+<body>
+  <div class="inframe baseFont">
+    <h1>Project 1 - Extract Programming Interview Questions from CareerCup</h1>
+    <center>(Due 10/25/2014)</center>
+    <p></p>
+    <p></p>
+    <b>1. Description</b>
+    <p></p>
+    <p></p>
+    In this project, we will develop a Java web application using servlets, JSP and JavaBeans
+	to extract programming interview questions from the CareerCup web site. We will use MySQL 
+	as our DBMS, and JDBC to execute the queries. The user interface is similar to the one below,
+    <p></p>
+    <center><img src="/bbcswebdav/xid-16380886_1" alt="proj1guiB" /></center>
+    <p></p>
+    <p></p>
+    <b>2. Requirements</b>
+    <p></p>
+    <p></p>
+    <ul><ol>
+      <li> You need to design a database to store the questions extracted. For each question, 
+	  you need to store: the content of the question, the unique ID assosiated with the 
+	  question, and the company name that gives this question.</li>
+	  <p></p>
+      <li> In the user interface above, when a user enters a page number, say <tt>7</tt>, 
+	  and click the <img src="/bbcswebdav/xid-16380887_1" alt="Load" /> button, your web application 
+	  will request the page at URL:<br /> 
+	  <tt>http://www.careercup.com/page?n=7</tt>, and process the returned page.
+      </li>
+	  <p></p>
+      <li> To process the returned HTML content, you need to study the structure of the
+	  source page, and use any method you like to extract the information from the page.
+      </li>
+	  <p></p>
+      <li> It is not required to do page number validation. If a user enters something that
+	  is not a valid page number, you will use the URL: <tt>http://www.careercup.com/page</tt>
+      </li>
+	  <p></p>
+	  <li>Do not write the same question into the table more than once by checking its
+	  ID extracted from the page.</li>
+	  <p></p>
+	  <li>After you write the questions into the database, you display the questions of
+	  the current page at the lower part of your user interface.</li>
+    </ol></ul>
+	<p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+	<p></p>
+    <p></p>
+	<center><span style="color: #D20106;">==========The End==========</span></center>
+  </div>
+</body>
+</html>
